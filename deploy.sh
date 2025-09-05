@@ -11,8 +11,8 @@ find dist -name "*.html" -exec sed -i '' 's|favicon.ico|/wardrobe-tracker/favico
 
 echo "📦 Deploying to GitHub Pages..."
 git checkout gh-pages
-# Copy dist files but exclude .env from deployment
-rsync -av --exclude='.env' dist/ .
+# Copy dist files (built files don't include .env)
+cp -r dist/* .
 git add .
 git commit -m "Deploy: $(date '+%Y-%m-%d %H:%M:%S')"
 git push origin gh-pages
