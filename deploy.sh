@@ -7,7 +7,8 @@ NODE_ENV=production ./node_modules/.bin/expo export --platform web
 echo "🔧 Fixing paths for GitHub Pages..."
 # Fix asset paths for GitHub Pages subdirectory
 find dist -name "*.html" -exec sed -i '' 's|_expo/|/wardrobe-tracker/_expo/|g' {} \;
-find dist -name "*.html" -exec sed -i '' 's|favicon.ico|/wardrobe-tracker/favicon.ico|g' {} \;
+find dist -name "*.html" -exec sed -i '' 's|/_expo/|/wardrobe-tracker/_expo/|g' {} \;
+find dist -name "*.html" -exec sed -i '' 's|/favicon.ico|/wardrobe-tracker/favicon.ico|g' {} \;
 
 echo "📦 Deploying to GitHub Pages..."
 git checkout gh-pages
