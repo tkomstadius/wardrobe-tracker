@@ -3,6 +3,7 @@
     "name": "Wardrobe Tracker",
     "slug": "wardrobe-tracker-stadiljus",
     "version": "1.0.0",
+    "platforms": ["web"],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
