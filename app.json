@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "wardrobe-tracker",
-    "slug": "wardrobe-tracker",
+    "name": "Wardrobe Tracker",
+    "slug": "wardrobe-tracker-stadiljus",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,7 +13,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.stadiljus.wardrobetrackerstadiljus",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -27,6 +31,19 @@
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "81a7e8f1-77b5-4b4a-b732-5cad13529904"
+      }
+    },
+    "owner": "stadiljus",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/81a7e8f1-77b5-4b4a-b732-5cad13529904"
+    }
   }
 }
